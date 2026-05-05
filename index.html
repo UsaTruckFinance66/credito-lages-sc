@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google Analytics - SUA TAG -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL0Y8CHCM7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -8,78 +9,100 @@
       gtag('js', new Date());
       gtag('config', 'G-XL0Y8CHCM7');
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lages e Região SC - Finanças Brasil</title>
+    
     <style>
-        /* Estilo dos Cards de Navegação */
-.menu-icones {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 30px 0;
-}
-.card {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 30%;
-    min-width: 200px;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 15px;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-    color: #003366;
-}
-.card:hover {
-    background: #e0e0e0;
-    transform: translateY(-5px);
-    border-color: #003366;
-}
-.card-icone { font-size: 40px; margin-bottom: 10px; }
-.card-titulo { font-weight: bold; font-size: 18px; }
+        /* ESTILO PROFISSIONAL E LIMPO */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f0f2f5; }
+        
+        header { background: #003366; color: white; padding: 60px 20px; text-align: center; border-bottom: 5px solid #ffc107; }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        header p { margin: 10px 0 0; font-size: 1.2em; opacity: 0.9; }
 
+        nav { background: #001f3d; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 15px; text-transform: uppercase; }
+        nav a:hover { color: #ffc107; }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+        /* CARDS DE NAVEGAÇÃO */
+        .menu-icones { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 40px 0; gap: 20px; }
+        .card { background: #ffffff; border: 1px solid #e1e4e8; border-radius: 12px; width: 28%; min-width: 250px; text-align: center; padding: 30px; transition: 0.3s; cursor: pointer; text-decoration: none; color: #003366; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); border-color: #003366; }
+        .card-icone { font-size: 50px; margin-bottom: 15px; display: block; }
+        .card-titulo { font-weight: bold; font-size: 20px; margin-bottom: 5px; }
+        .card p { font-size: 14px; color: #666; margin: 0; }
+
+        /* ÁREA DE TEXTOS */
+        .secao-texto { margin-top: 50px; padding-top: 30px; border-top: 2px solid #eee; }
+        .secao-texto h2 { color: #003366; font-size: 1.8em; margin-bottom: 20px; }
+        .artigo { margin-bottom: 40px; text-align: justify; }
+        .artigo strong { color: #003366; }
+
+        footer { background: #111; color: #aaa; padding: 40px 20px; text-align: center; font-size: 14px; margin-top: 60px; }
+        footer a { color: white; text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
-<header><h1>LAGES E REGIÃO SC - FINANÇAS BRASIL</h1></header>
+
+<header>
+    <h1>LAGES E REGIÃO SC</h1>
+    <p>Crédito, Finanças e Logística para a Serra Catarinense</p>
+</header>
+
 <nav>
     <a href="index.html">Início</a>
     <a href="sobre.html">Sobre</a>
     <a href="contato.html">Contato</a>
+    <a href="privacidade.html">Privacidade</a>
 </nav>
 
 <div class="container">
+    
     <div class="menu-icones">
-    <!-- Card Caminhões -->
-    <a href="fleet-management.html" class="card">
-        <div class="card-icone">🚚</div>
-        <div class="card-titulo">Caminhões</div>
-        <p>Gestão e Financiamento</p>
-    </a>
+        <a href="fleet-management.html" class="card">
+            <span class="card-icone">🚚</span>
+            <div class="card-titulo">Caminhões</div>
+            <p>Gestão e Financiamento</p>
+        </a>
 
-    <!-- Card Seguros -->
-    <a href="insurance.html" class="card">
-        <div class="card-icone">🛡️</div>
-        <div class="card-titulo">Seguros</div>
-        <p>Proteção de Carga</p>
-    </a>
+        <a href="insurance.html" class="card">
+            <span class="card-icone">🛡️</span>
+            <div class="card-titulo">Seguros</div>
+            <p>Proteção de Carga</p>
+        </a>
 
-    <!-- Card Crédito -->
-    <a href="credito-pessoal.html" class="card">
-        <div class="card-icone">💰</div>
-        <div class="card-titulo">Crédito</div>
-        <p>Score e Limites</p>
-    </a>
+        <a href="credito-pessoal.html" class="card">
+            <span class="card-icone">💰</span>
+            <div class="card-titulo">Crédito</div>
+            <p>Score e Limites</p>
+        </a>
+    </div>
+
+    <div class="secao-texto">
+        <h2>Destaques de Crédito e Financiamento 2025/2026</h2>
+        
+        <!-- COLE SEUS 30 TEXTOS AQUI EMBAIXO -->
+        <div class="artigo">
+            <p><strong>1. Financiamento de Caminhões na Serra SC:</strong> O mercado de transporte em Lages exige veículos potentes para encarar a Serra do Rio do Rastro. Em 2025, as taxas para autônomos estão mais competitivas...</p>
+        </div>
+
+        <div class="artigo">
+            <p><strong>2. Gestão de Frotas e Custos:</strong> Operar na BR-116 exige um controle rigoroso de manutenção preventiva. O desgaste de pneus e freios em Santa Catarina é superior à média nacional...</p>
+        </div>
+
+        <!-- Continue colando seus textos aqui dentro de <div class="artigo"> -->
+
+    </div>
 </div>
 
+<footer>
+    <p>&copy; 2024-2026 Lages e Região SC - Informação e Credibilidade</p>
+    <a href="sobre.html">Sobre</a> | <a href="contato.html">Contato</a> | <a href="privacidade.html">Privacidade</a>
+</footer>
 
-    <h2>Destaques de Crédito e Financiamento 2025/2026</h2>
-    <p><strong>[MANTENHA AQUI TODOS OS SEUS 30 TEXTOS QUE JÁ ESTÃO NO SITE]</strong></p>
-</div>
-
-<footer><p>&copy; 2024-2026 Lages e Região SC</p></footer>
 </body>
 </html>
