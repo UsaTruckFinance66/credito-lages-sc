@@ -15,30 +15,93 @@
     <title>Lages e Região SC - Finanças Brasil</title>
     
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f0f2f5; }
-        header { background: #003366; color: white; padding: 50px 20px; text-align: center; border-bottom: 5px solid #ffc107; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { margin: 10px 0 0; font-size: 1.1em; opacity: 0.9; }
+        /* DESIGN PROFISSIONAL - FUNDO CINZA E TOPO AZUL */
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f7f6; /* Fundo levemente cinza para destacar o conteúdo */
+        }
+        
+        header { 
+            background: #002b5c; /* Azul Marinho Profissional */
+            color: white; 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #f9bc35; /* Detalhe em Dourado/Amarelo */
+        }
 
-        nav { background: #001f3d; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 14px; }
-        nav a:hover { color: #ffc107; }
+        nav { 
+            background: #001a35; 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        nav a { 
+            color: white; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+        }
 
-        .container { max-width: 1000px; margin: 30px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            padding: 25px; 
+            background: white; /* Caixa do conteúdo em branco */
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
 
-        /* CARDS DE NAVEGAÇÃO */
-        .menu-icones { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 30px 0; gap: 15px; }
-        .card { background: #fff; border: 1px solid #ddd; border-radius: 12px; width: 30%; min-width: 250px; text-align: center; padding: 25px; transition: 0.3s; cursor: pointer; text-decoration: none; color: #003366; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #003366; }
-        .card-icone { font-size: 45px; margin-bottom: 10px; display: block; }
-        .card-titulo { font-weight: bold; font-size: 18px; }
+        /* CARDS DOS SERVIÇOS */
+        .menu-icones { 
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            margin: 30px 0; 
+            gap: 20px;
+        }
+        .card { 
+            background: #ffffff; 
+            border: 1px solid #ddd; 
+            border-radius: 12px; 
+            width: 30%; 
+            min-width: 250px; 
+            text-align: center; 
+            padding: 25px; 
+            text-decoration: none; 
+            color: #002b5c; 
+            transition: 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+        }
+        .card-icone { font-size: 50px; margin-bottom: 10px; display: block; }
+        .card-titulo { font-weight: bold; font-size: 20px; }
 
-        /* TEXTOS */
-        .artigo { margin-bottom: 30px; padding: 15px; border-bottom: 1px solid #eee; text-align: justify; }
-        .artigo strong { color: #003366; }
-        h2 { color: #003366; border-left: 5px solid #ffc107; padding-left: 10px; }
+        /* LISTA DE TEXTOS - LIMPA */
+        .lista-textos { margin-top: 40px; }
+        .artigo { 
+            padding: 20px; 
+            border-bottom: 1px solid #eee; 
+            text-align: justify;
+        }
+        .artigo h3 { color: #002b5c; margin-top: 0; }
 
-        footer { background: #111; color: #ccc; padding: 30px; text-align: center; font-size: 13px; margin-top: 50px; }
+        footer { 
+            background: #111; 
+            color: #ccc; 
+            padding: 30px; 
+            text-align: center; 
+            margin-top: 50px; 
+        }
         footer a { color: white; text-decoration: none; margin: 0 10px; }
     </style>
 </head>
@@ -46,72 +109,64 @@
 
 <header>
     <h1>LAGES E REGIÃO SC</h1>
-    <p>Portal de Crédito, Finanças e Logística Nacional</p>
+    <p>Portal Independente de Crédito, Finanças e Logística</p>
 </header>
 
 <nav>
     <a href="index.html">Início</a>
     <a href="sobre.html">Sobre</a>
     <a href="contato.html">Contato</a>
-    <a href="privacidade.html">Privacidade</a>
 </nav>
 
 <div class="container">
     
-    <!-- ÍCONES PARA O ROBÔ CLICAR -->
+    <!-- ÍCONES DE NAVEGAÇÃO -->
     <div class="menu-icones">
         <a href="fleet-management.html" class="card">
             <span class="card-icone">🚚</span>
             <div class="card-titulo">Caminhões</div>
-            <p>Gestão de Frotas</p>
+            <p>Financiamento e Frotas</p>
         </a>
         <a href="insurance.html" class="card">
             <span class="card-icone">🛡️</span>
             <div class="card-titulo">Seguros</div>
-            <p>Proteção de Carga</p>
+            <p>Proteção de Cargas</p>
         </a>
         <a href="credito-pessoal.html" class="card">
             <span class="card-icone">💰</span>
             <div class="card-titulo">Crédito</div>
-            <p>Score e Limites</p>
+            <p>Score e Empréstimos</p>
         </a>
     </div>
 
-    <h2>Informações e Guias 2025/2026</h2>
+    <div class="lista-textos">
+        <h2>Destaques Financeiros 2025/2026</h2>
 
-    <div class="artigo">
-        <p><strong>1. Financiamento em Lages:</strong> O mercado de transporte na Serra Catarinense exige veículos potentes para encarar a Serra do Rio do Rastro. Em 2025, o foco está na renovação para motores Euro 6.</p>
-    </div>
+        <!-- Artigo 1 -->
+        <div class="artigo">
+            <h3>Financiamento de Pesados em Lages</h3>
+            <p>O mercado de transporte na Serra Catarinense exige veículos de alta performance. Em 2025, as linhas de crédito para renovação de frota em Lages focam em tecnologia Euro 6, garantindo mais economia no trecho da BR-116.</p>
+        </div>
 
-    <div class="artigo">
-        <p><strong>2. Gestão de Custos Logísticos:</strong> Operar na BR-116 exige controle de manutenção. O desgaste de pneus em Lages é superior à média devido ao asfalto abrasivo e clima frio.</p>
-    </div>
+        <!-- Artigo 2 -->
+        <div class="artigo">
+            <h3>Como Aumentar seu Score em Santa Catarina</h3>
+            <p>Manter as contas em dia e o Cadastro Positivo ativo são os primeiros passos para liberar limites altos nos bancos de Lages. O Open Finance tem ajudado o catarinense a negociar taxas melhores.</p>
+        </div>
 
-    <div class="artigo">
-        <p><strong>3. Crédito para Autônomos:</strong> Cooperativas como Sicoob e Sicredi oferecem taxas diferenciadas para quem vive em Santa Catarina, entendendo o ciclo da madeira e da safra.</p>
-    </div>
+        <!-- Artigo 3 -->
+        <div class="artigo">
+            <h3>Seguros de Carga na Serra do Rio do Rastro</h3>
+            <p>Proteger o patrimônio contra imprevistos climáticos e acidentes é vital. O seguro de carga regional oferece coberturas específicas para quem roda nas curvas perigosas da nossa serra.</p>
+        </div>
+        
+        <!-- Continue adicionando seus outros textos aqui seguindo o modelo acima -->
 
-    <div class="artigo">
-        <p><strong>4. Seguro de Carga na Serra:</strong> Proteger o patrimônio contra tombamentos na descida da serra é vital. O seguro RCF-DC é a garantia de sossego para o transportador serrano.</p>
     </div>
-
-    <div class="artigo">
-        <p><strong>5. Score de Crédito em SC:</strong> Manter o Cadastro Positivo ativo e pagar as contas da Celesc em dia são os primeiros passos para liberar limites altos nos bancos de Lages.</p>
-    </div>
-
-    <!-- Os outros textos seguem o mesmo padrão abaixo -->
-    <div class="artigo">
-        <p><strong>6. Investimentos em Lages:</strong> O hub logístico da região está atraindo novos centros de distribuição, valorizando terrenos industriais em 2026.</p>
-    </div>
-    
-    <div class="artigo">
-        <p><strong>7. Manutenção de Pesados:</strong> Revisar lonas de freio antes de cruzar a serra economiza 40% em relação a manutenções corretivas de emergência.</p>
-    </div>
-
 </div>
 
 <footer>
-    <p>&copy; 2024-2026 Lages e Região SC - Credibilidade em Finanças</p>
+    <p>&copy; 2024-2026 Lages e Região SC - Informação e Credibilidade</p>
     <a href="sobre.html">Sobre</a> | <a href="contato.html">Contato</a> | <a href="privacidade.html">Privacidade</a>
 </footer>
 
